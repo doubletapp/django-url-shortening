@@ -26,11 +26,11 @@ class UrlTestCase(TestCase):
 
         self.assertGreaterEqual(len(short_id), short_id_len + 1)
 
-    def test_get_url(self):
+    def test_get_short_url(self):
         url = get_short_url(self.site)
         self.assertEqual(url.url, self.site)
 
-    def test_get_url_cache(self):
+    def test_get_short_url_cache(self):
         url1 = get_short_url(self.site)
         url2 = get_short_url(self.site)
 
