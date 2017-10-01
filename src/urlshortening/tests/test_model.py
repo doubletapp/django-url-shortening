@@ -47,6 +47,3 @@ class UrlTestCase(TestCase):
         site = get_full_url(url.short_id)
 
         self.assertEqual(url.url, site.url)
-
-
-

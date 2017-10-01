@@ -1,6 +1,7 @@
 INITIAL_URL_LEN = 6
 RETRY_COUNT = 5
 SHORT_URL_PATH = 'http://example.com/short-prefix/'
+REDIRECT_PREFIX = 'r'
 
 DEBUG = TEMPLATE_DEBUG = True
 SECRET_KEY = '123'

@@ -1,13 +1,13 @@
+from math import ceil
+from uuid import uuid4
+
 from django.db.models import SlugField, URLField, DateTimeField, IntegerField, Model, BooleanField
 from django.db.models.functions import Length
 from django.conf import settings
-from math import ceil
-import binascii
-import os
 
 
 def generate_token(length):
-    return binascii.hexlify(os.urandom(ceil(length / 2))).decode()
+    return "".join([uuid4().hex for _ in range(ceil(length/32))])[:length]
 
 
 def generate_short_id(short_id_length, retry_count):
