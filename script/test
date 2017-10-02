@@ -1,0 +1,3 @@
+#!/bin/sh
+cd src/urlshortening
+exec django-admin.py test --pythonpath=.. --settings=urlshortening.testsettings

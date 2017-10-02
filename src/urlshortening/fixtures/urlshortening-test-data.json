@@ -1,0 +1,24 @@
+[
+  {
+    "model": "urlshortening.url",
+    "pk": "000001",
+    "fields": {
+      "short_id": "000001",
+      "url": "http://example.com/to-000001",
+      "pub_date": "2017-01-16T08:16:59.844Z",
+      "is_expired": "False",
+      "redirect_count": "0"
+    }
+  },
+  {
+    "model": "urlshortening.url",
+    "pk": "000002",
+    "fields": {
+      "short_id": "000002",
+      "url": "http://example.com/to-000002",
+      "pub_date": "2017-01-16T08:17:59.844Z",
+      "is_expired": "True",
+      "redirect_count": "5"
+    }
+  }
+]
