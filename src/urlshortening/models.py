@@ -60,6 +60,5 @@ class Url(Model):
     is_expired = BooleanField(default=False)
     redirect_count = IntegerField(default=0)
 
-
-def __str__(self):
-    return self.short_id
+    def __str__(self):
+        return self.short_id
